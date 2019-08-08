@@ -1,0 +1,25 @@
+This projects was completed in my 1st year of college while in programming II. This project was kind of the capstone of our 
+
+lessons in MVC design as well as basic database CRUD, working with MySQL Workbench and coding in the Eclipse IDE. Our 
+
+instructor pretty much gave us the db schema as well as a few essential methods, and he let us go. This is probably the project I 
+
+am most proud of in prog II as it really pushed me as a programmer, and I also really enjoy exercising and fitness so it was a 
+
+pretty fun project. 
+
+HOW TO USE:
+
+The user must create an account on MyFitness Tracker before logging any exercises. Once adding an account by populating all the 
+
+personal information fields needed, the user will have to remember their ID number to load the account. From there the user will 
+
+be able to add, remove, or view / edit aerobic and/or strength exercises as they please.
+
+Under preferences, the user has the option to toggle a dark mode.
+
+If the user is finished with the program and never plans to user MyFitness Tracker again, the user should load his/her account and 
+
+delete it from the database. All information tied to this user's account will be removed.
+
+Feedback and/or constructive criticism is always appreciated. Thank you!
