@@ -24,27 +24,43 @@ class TestAStar {
 	 */
 	@Test
 	void testMegaMaze() {
-		/*
-		 * This takes just over 3 minutes on my machine...
-		 */
 		boolean[][] maze = readImage("src/test/fractal.gif");
 
 		AbstractMaze m = new Maze(maze);
-		assertTrue(m.getAStarPath().size() == 2109);
+		assertTrue(m.getAStarPath().size());
+	}
+	
+	/**
+	 * @author cberkstresser
+	 */
+	@Test
+	void testBigMaze() {
+		boolean[][] maze = readImage("src/test/fractalmid0.gif");
+
+		AbstractMaze m = new Maze(maze);
+		assertTrue(m.getAStarPath().size());
+	}
+	
+	/**
+	 * @author cberkstresser
+	 */
+	@Test
+	void testLargerMaze() {
+		boolean[][] maze = readImage("src/test/fractalmid1.gif");
+
+		AbstractMaze m = new Maze(maze);
+		assertTrue(m.getAStarPath().size());
 	}
 
 	/**
 	 * @author cberkstresser
 	 */
 	@Test
-	void testMidMaze() {
-		/*
-		 * This takes just over 30 seconds on my machine...
-		 */
-		boolean[][] maze = readImage("src/test/fractal2.gif");
+	void testLargestMaze() {
+		boolean[][] maze = readImage("src/test/fractalmid2.gif");
 
 		AbstractMaze m = new Maze(maze);
-		assertTrue(m.getAStarPath().size() == 1628);
+		assertTrue(m.getAStarPath().size());
 	}
 
 	/**
