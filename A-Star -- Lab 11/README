@@ -1,17 +1,14 @@
-This projects was completed in my 2nd year of college while in data structures. This project was the capstone of our class and introduced us into A.I.
-
-somewhat, as this algorithm finds the shortest path possible from one end of the maze to the other.
+This projects was completed in my 2nd year of college while in data structures. This project was the capstone of our class and introduced 
+us into A.I. somewhat, as this algorithm finds the shortest path possible from one end of the maze to the other.
 
 HOW TO USE:
 
 You can open up the test case file and run test cases against my project or simply run it from the sample mazes in Main. 
 
-To run against the large maze images in the test package, the writeImage function (credited to Caleb Berkstresser) will save a duplicate image of 
+To run against the large maze images in the test package, the writeImage function (credited to Caleb Berkstresser) will save a duplicate 
+image of the maze to your folder with the path the maze found in red.
 
-the maze to your folder with the path the maze found in red.
-
-This class really helped me to understand complex problems and how to apply logic to them. It was tough but rewarding as nothing that is rewarding in 
-
-life ever comes easy!
+This class really helped me to understand complex problems and how to apply logic to them. It was tough but rewarding as nothing that is 
+rewarding in life ever comes easy!
 
 Feedback and/or constructive criticism is always appreciated. Thank you!
