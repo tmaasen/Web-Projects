@@ -1,0 +1,126 @@
+@import "../node_modules/mini.css/dist/mini-default.min.css";
+
+.navbar-leftnav {
+  display: flex;
+  justify-content: flex-start;
+}
+.navbar-title {
+  border: 5px solid black;
+  padding: 5px;
+  font-weight: bold;
+  font-size: xx-large;
+  width: max-content;
+  float: right;
+  margin-right: 1rem;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: -1%;
+}
+.projectHeader {
+  display: inline;
+  vertical-align: sub;
+  align-self: center;
+}
+.projectDetailsContainer {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0rem;
+}
+svg[data-icon="arrow"] {
+  vertical-align: bottom;
+  font-size: 2rem;
+}
+.backButton {
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: 2px solid #282c34;
+  padding: 8px;
+  color: #282c34;
+}
+.backButton:hover {
+  background-color: #282c34;
+  color: #fff;
+  text-decoration: underline;
+}
+.fade {
+  opacity: 0.2;
+  pointer-events: none;
+}
+form {
+  min-width: 300px;
+}
+.row {
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.button {
+  font-weight: bold;
+}
+.button:hover,
+.wrapper {
+  background-color: rgb(119, 118, 118);
+}
+.wrapper {
+  margin: 1rem;
+}
+.prefix {
+  padding: 6px 12px;
+  color: #555;
+  background-color: #eee;
+  white-space: nowrap;
+}
+.card {
+  transition: all 0.5 ease-in-out;
+  max-width: 320px;
+  height: 420px;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.bordered:hover {
+  background-color: gray;
+}
+.truncator {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.center-page {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+.homeTitle {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+.featured-projects-container {
+  margin: 1rem 25rem;
+}
+.not-found {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 5rem;
+  text-transform: uppercase;
+  border: 1rem solid black;
+  padding: 0rem 3rem;
+}
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
