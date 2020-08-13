@@ -3,10 +3,10 @@ export class Project {
   name: string = '';
   description: string = '';
   imageUrl: string = '';
-  contractTypeId: number | undefined;
-  contractSignedOn: Date = new Date();
-  budget: number = 0;
-  isActive: boolean = false;
+  techUsed: string = '';
+  gitRepo: string = '';
+  isFinished: boolean = false;
+  static map: any;
   get isNew(): boolean {
     return this.id === undefined;
   }
@@ -17,11 +17,8 @@ export class Project {
     if (initializer.name) this.name = initializer.name;
     if (initializer.description) this.description = initializer.description;
     if (initializer.imageUrl) this.imageUrl = initializer.imageUrl;
-    if (initializer.contractTypeId)
-      this.contractTypeId = initializer.contractTypeId;
-    if (initializer.contractSignedOn)
-      this.contractSignedOn = initializer.contractSignedOn;
-    if (initializer.budget) this.budget = initializer.budget;
-    if (initializer.isActive) this.isActive = initializer.isActive;
+    if (initializer.techUsed) this.techUsed = initializer.techUsed;
+    if (initializer.gitRepo) this.gitRepo = initializer.gitRepo;
+    if (initializer.isFinished) this.isFinished = initializer.isFinished;
   }
 }

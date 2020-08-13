@@ -15,9 +15,11 @@ function navbar() {
     <Router>
       <header style={{ height: "auto" }}>
         <span style={{ paddingLeft: "1rem" }}>
-          <img src="/assets/logo-3.svg" alt="logo" width="50" height="100" style={{ paddingTop: "0.5rem" }} />
+          <NavLink to="/" exact>
+            <img src="/TM.png" alt="logo" width="70" height="120" className="nav-icon" />
+          </NavLink>
         </span>
-        <NavLink to="/" exact className="button rounded">
+        <NavLink to="/" exact className="button rounded" style={{marginLeft:"2%"}}>
           <span className="icon-home"></span>Home
         </NavLink>
         <NavLink to="/projects/" className="button rounded">

@@ -4,29 +4,22 @@ import { Link } from 'react-router-dom'
 
 interface ProjectCardProps { // define props here
   project: Project;
-  onEdit: (project: Project) => void;
 }
 
 function ProjectCard(props: ProjectCardProps) {
-  const { project, onEdit } = props;
-  const handleClick = (projectBeingEdited: Project) => {
-      onEdit(projectBeingEdited) // onEdit is actually a prop method defined in the function header
-  } 
+  const { project } = props;
   return (
     <div className="card">
-      <img src={project.imageUrl} alt={project.name}></img>
       <section>
         <Link to={'/project/' + project.id}>
+        <img src={project.imageUrl} alt={project.name} className="card-img"></img>
         <h5 className="strong">
           <strong>{project.name}</strong>
         </h5>
-        <p className="truncator">{project.description}</p>
-        <p>Budget: ${project.budget.toLocaleString()} </p>
         </Link>
-        <button className="bordered" onClick={() => handleClick(project)}>
-          <span className="icon-edit"></span>
-          Edit
-        </button>
+        <p className="truncator card-info">{project.description}</p>
+        <p className="card-info"><b>Technologies Used:</b> {project.techUsed}</p>
+        <a href={project.gitRepo} target="_blank" rel="noopener noreferrer" className="card-info">GitHub Repo</a>
       </section>
     </div>
   );

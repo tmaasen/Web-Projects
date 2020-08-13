@@ -13,9 +13,13 @@
   float: right;
   margin-right: 1rem;
 }
-img {
+.nav-icon {
+  vertical-align: bottom;
+  padding-top: 0.5rem;
+}
+.card-img {
   max-width: 100%;
-  height: auto;
+  height: 190px;
   margin-bottom: -1%;
 }
 .projectHeader {
@@ -27,6 +31,11 @@ img {
   display: flex;
   justify-content: center;
   margin: 2rem 0rem;
+}
+.detail-card {
+  min-height: auto !important;
+  overflow-y: visible;
+  transform: none;
 }
 svg[data-icon="arrow"] {
   vertical-align: bottom;
@@ -74,12 +83,16 @@ form {
 }
 .card {
   transition: all 0.5 ease-in-out;
-  max-width: 320px;
-  height: 420px;
+  max-width: 400px;
+  min-height: 425px;
 }
 .card:hover {
   transform: scale(1.05);
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.card-info {
+  margin-left: 2%;
+  color: var(--a-visited-color);
 }
 .bordered:hover {
   background-color: gray;
@@ -87,7 +100,7 @@ form {
 .truncator {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 5;
   overflow: hidden;
 }
 .center-page {
@@ -101,7 +114,7 @@ form {
   font-size: 2.5rem;
 }
 .featured-projects-container {
-  margin: 1rem 25rem;
+  margin: 1rem 6rem;
 }
 .not-found {
   display: inline-block;

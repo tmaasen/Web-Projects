@@ -5,7 +5,6 @@ import arrowLeftShort from "@iconify/icons-bi/arrow-left-short";
 
 export default function ProjectDetail(props: any) {
   const { project } = props;
-  let signedDate = new Date(project.contractSignedOn);
   return (
     <>
       <title>Project Details | {project.name}</title>
@@ -20,14 +19,7 @@ export default function ProjectDetail(props: any) {
           <h1 className="projectHeader">{project.name}</h1>
         </div>
         <div className="row" style={{ justifyContent: "flex-start" }}>
-          <div
-            className="card large"
-            style={{
-              height: "auto",
-              overflowY: "visible",
-              transform: "none",
-            }}
-          >
+          <div className="card large detail-card">
             <img
               className="rounded"
               src={project.imageUrl}
@@ -35,11 +27,11 @@ export default function ProjectDetail(props: any) {
             />
             <section className="section dark">
               <p>{project.description}</p>
-              <p>Budget : $ {Intl.NumberFormat().format(project.budget)}.00</p>
-              <p>Signed : {signedDate.toDateString()}</p>
+              <p className="card-info" style={{color:"black"}}><b>Technologies Used:</b> {project.techUsed}</p>
+              <a href={project.gitRepo} target="_blank" rel="noopener noreferrer" className="card-info">GitHub Repo</a>
               <p>
                 <mark className="active">
-                  {project.isActive ? "active" : "inactive"}
+                  {project.isFinished ? "Finished" : "Not Finished"}
                 </mark>
               </p>
             </section>

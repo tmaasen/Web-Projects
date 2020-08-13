@@ -3,68 +3,31 @@ import { Project } from './Project';
 export const MOCK_PROJECTS = [
   new Project({
     id: 1,
-    name: 'Johnson - Kutch',
-    description:
-      'Fully-configurable intermediate framework. Ullam occaecati libero laudantium nihil voluptas omnis.',
-    imageUrl: '/assets/placeimg_500_300_arch4.jpg',
-    contractTypeId: 3,
-    contractSignedOn: '2013-08-04T22:39:41.473Z',
-    budget: 54637,
-    isActive: false
+    name: "StoryTime Books",
+    description: "Contributors: Seokwoo Ha, Ethan Hutchison, and myself\nInspiration: Semester project\nWhat it does: E-Commerce book store with admin dashboard\nHow I built it: Vue.js, Laravel backend, MySQL database running on AWS\nChallenges I ran into: All new technologies for me and my team; We were sent home shortly after the project began due to COVID-19; communication; Making the project fully in SPA design\nAccomplishments that I'm proud of: Great UI, fully functional, won best project in the class during presentation, all data is secure and protects from SQL Injection\nWhat's next for StoryTimeBooks: We have many features we hope to add in the future.",
+    imageUrl: "/assets/StoryTime.PNG",
+    techUsed: "Laravel, MySQL, Vue.js, JWT, AWS",
+    gitRepo: "https://github.com/tmaasen/StoryTimeBooks/tree/master/StoryTimeBooks",
+    isFinished: false
   }),
   new Project({
     id: 2,
-    name: 'Wisozk Group',
-    description:
-      'Centralized interactive application. Exercitationem nulla ut ipsam vero quasi enim quos doloribus voluptatibus.',
-    imageUrl: '/assets/placeimg_500_300_arch1.jpg',
-    contractTypeId: 4,
-    contractSignedOn: '2012-08-06T21:21:31.419Z',
-    budget: 91638,
-    isActive: true
+    name: "Tic-Tac-Toe",
+    description: "This is the first project I ever developed in the React framework.",
+    imageUrl: "/assets/tictactoe.PNG",
+    techUsed: "React.js",
+    gitRepo: "https://github.com/tmaasen/Code-Projects/tree/master/Tic-Tac-Toe",
+    isFinished: false
   }),
   new Project({
     id: 3,
-    name: 'Denesik LLC',
-    description:
-      'Re-contextualized dynamic moratorium. Aut nulla soluta numquam qui dolor architecto et facere dolores.',
-    imageUrl: '/assets/placeimg_500_300_arch12.jpg',
-    contractTypeId: 6,
-    contractSignedOn: '2016-06-26T18:24:01.706Z',
-    budget: 29729,
-    isActive: true
+    name: "Pictorial",
+    description: "Our professor stated, 'I feel like I should appreciate art, but I don't know where to start.' That inspired us to create an app that would help users breakdown artwork into concepts they could understand such as moods and hues.\nWe built this as a mobile app so that users could take photos of artwork on their mobile device. Our app would analyze the photo you took and send you information on the hues in the painting.\nOne of the challenges we faced was trying to figure out the best way to upload a photo to our cloud storage. Currently our application cannot upload a live photo, but there is data on it from our google cloud bucket to show proof of concept.\nAnother challenge was determining the hues and analysis of those. Our app is extremely limited in the hex range it can analyze and provide, so we would like to expand that in the future.",
+    imageUrl: "/assets/noimage.PNG",
+    techUsed: "Flutter, Dart",
+    gitRepo: "https://github.com/Brian-Hofmann/Pictorial",
+    isFinished: false
   }),
-  new Project({
-    id: 4,
-    name: 'Purdy, Keeling and Smitham',
-    description:
-      'Innovative 6th generation model. Perferendis libero qui iusto et ullam cum sint molestias vel.',
-    imageUrl: '/assets/placeimg_500_300_arch5.jpg',
-    contractTypeId: 4,
-    contractSignedOn: '2013-05-26T01:10:42.344Z',
-    budget: 45660,
-    isActive: true
-  }),
-  new Project({
-    id: 5,
-    name: 'Kreiger - Waelchi',
-    description:
-      'Managed logistical migration. Qui quod praesentium accusamus eos hic non error modi et.',
-    imageUrl: '/assets/placeimg_500_300_arch12.jpg',
-    contractTypeId: 2,
-    contractSignedOn: '2009-12-18T21:46:47.944Z',
-    budget: 81188,
-    isActive: true
-  }),
-  new Project({
-    id: 6,
-    name: 'Lesch - Waelchi',
-    description:
-      'Profound mobile project. Rem consequatur laborum explicabo sint odit et illo voluptas expedita.',
-    imageUrl: '/assets/placeimg_500_300_arch1.jpg',
-    contractTypeId: 3,
-    contractSignedOn: '2016-09-23T21:27:25.035Z',
-    budget: 53407,
-    isActive: false
-  })
 ];
+
+export default MOCK_PROJECTS;

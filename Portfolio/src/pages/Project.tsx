@@ -1,31 +1,28 @@
 import React from 'react';
-import { projectAPI } from '../components/API';
 import ProjectDetail from '../components/ProjectDetail';
 import { Project } from '../components/Project';
+import {MOCK_PROJECTS} from '../components/MockProjects';
 
 interface ProjectPageState {
   loading: boolean;
-  project: Project | undefined;
+  project_id: Project | Number;
   error: string | undefined;
 }
 
 class ProjectPage extends React.Component<any, ProjectPageState> {
   state = {
     loading: false,
-    project: undefined,
+    project_id: 0,
     error: ''
   };
 
   componentDidMount() {
-    const id = Number(this.props.match.params.id);
-    this.setState({ loading: true });
-    projectAPI
-      .find(id)
-      .then(data => this.setState({ project: data, loading: false }))
-      .catch(e => this.setState({ error: e.message, loading: false }));
+    this.setState({ loading: true, project_id: this.props.match.params.id });
   }
+
   render() {
-    const { loading, project, error } = this.state;
+    const { loading, project_id, error } = this.state;
+    const id = this.props.match.params.id-1;
     return (
       <>
         {loading && (
@@ -45,7 +42,7 @@ class ProjectPage extends React.Component<any, ProjectPageState> {
             </div>
           </div>
         )}
-        {project && <ProjectDetail project={project} />}
+        {project_id && <ProjectDetail project={MOCK_PROJECTS[id]} />}
       </>
     );
   }
