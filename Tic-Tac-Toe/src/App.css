@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-image: url("binarybackground.jpg");
+  background-size: cover;
 }
 
 .App-logo {
@@ -13,8 +15,18 @@
   }
 }
 
+.textbox {
+  width: 560px;
+  margin-right: 14px;
+  margin-top: 0.5rem;
+  height: 30px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;  
+  border: 1px solid #cdcdcd;
+  border-color: rgba(0, 0, 0, .15);
+}
+
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,6 +47,13 @@
 
 body {
   font: 14px "Century Gothic", Futura, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 ol, ul {
@@ -76,7 +95,7 @@ ol, ul {
 }
 
 .game-info {
-  margin-left: 50px;
+  margin-left: 25px;
 }
 
 .resetButton {

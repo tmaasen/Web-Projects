@@ -90,13 +90,13 @@ export class Game extends React.Component {
         return (
             <div>                
                 <div style={{padding:'10px'}}>
-                    <span>Player 1:&nbsp;<input id="p1" placeholder="Player 1's name" onChange={event => this.setState({player1:event.target.value})}></input></span>
+                    <span>Player 1:&nbsp;<input className="textbox" placeholder="Player1" id="p1" onChange={event => this.setState({player1:event.target.value})}></input></span>
                     &nbsp;&nbsp;&nbsp;
-                    <span>Player 2:&nbsp;<input id="p2" placeholder="Player 2's name" onChange={event => this.setState({player2:event.target.value})}></input></span>
+                    <span>Player 2:&nbsp;<input className="textbox" placeholder="Player2" id="p2" onChange={event => this.setState({player2:event.target.value})}></input></span>
                     &nbsp;&nbsp;&nbsp;
                 </div>
-                <div style={{ display: 'flex' }}>
-                    <title>Tanner's Tic-Tac-Toe</title>
+                <div className="container">
+                    <title>Tic-Tac-Toe</title>
                     <div className="game">
                         <div className="game-board">
                             <Board 

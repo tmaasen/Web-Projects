@@ -23,7 +23,7 @@ export const MOCK_PROJECTS = [
     id: 3,
     name: "Pictorial",
     description: "Our professor stated, 'I feel like I should appreciate art, but I don't know where to start.' That inspired us to create an app that would help users breakdown artwork into concepts they could understand such as moods and hues.\nWe built this as a mobile app so that users could take photos of artwork on their mobile device. Our app would analyze the photo you took and send you information on the hues in the painting.\nOne of the challenges we faced was trying to figure out the best way to upload a photo to our cloud storage. Currently our application cannot upload a live photo, but there is data on it from our google cloud bucket to show proof of concept.\nAnother challenge was determining the hues and analysis of those. Our app is extremely limited in the hex range it can analyze and provide, so we would like to expand that in the future.",
-    imageUrl: "/assets/noimage.PNG",
+    imageUrl: "/assets/pictorial.jpg",
     techUsed: "Flutter, Dart",
     gitRepo: "https://github.com/Brian-Hofmann/Pictorial",
     isFinished: false
