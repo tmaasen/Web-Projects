@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+    <!-- <script src="./js/timer.js"></script> -->
+    <script defer src="./js/animation.js"></script>
+    <script defer src="./js/ripple.js"></script>
+    <title>Breathe & Relax</title>
+  </head>
+  <body>
+    <audio id="sound" loop src="./assets/sound.mp3" type="mp3"></audio>
+    <h1>Relax</h1>
+    
+    <div class="timerbox">
+      <label for="timer"></label>
+      <select name="timer" id="time">
+        <option value="30">30 Seconds</option>
+        <option value="60">1 Minute</option>
+        <option value="120">2 Minutes</option>
+        <option value="180">3 Mintues</option>
+        <option value="300">5 Minutes</option>
+      </select>
+    </div>
+
+    <div id="display">
+      <p></p>
+    </div>
+
+    <div class="container">
+      <div class="ripple-ticker"></div>
+      <div class="circle">
+        <p id="text"></p>
+      </div>
+
+      <div class="pointer-container">
+        <div class="pointer"></div>
+      </div>
+
+      <div class="gradient-circle"></div>
+    </div>
+  </body>
+</html>
